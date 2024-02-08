@@ -3,7 +3,7 @@
 // import IntroContent from '@/content/home.mdx';
 import IntroContent from '@/content/intro.mdx';
 import { useSectionInView } from '@/hooks/useSectionInView';
-import headshot from '@/public/John_Hamlin_Headshot.jpg';
+// import headshot from '@/public/John_Hamlin_Headshot.jpg';
 import { motion, useAnimate } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
