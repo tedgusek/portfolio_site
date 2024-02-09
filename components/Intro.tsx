@@ -32,45 +32,13 @@ function Home() {
     <section
       ref={ref}
       id="home"
-      className="mb-28 max-w-[50rem] scroll-mt-[100rem] text-center sm:mb-0"
+      className="mb-28 max-w-5xl w-full scroll-mt-[100rem] text-center sm:mb-0 "
     >
       <div className="flex flex-col items-center justify-center">
-        {/* <div className="relative">
-          <motion.div
-            onClick={animateWave}
-            onHoverStart={animateWave}
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              type: 'tween',
-              duration: 0.2,
-            }}
-          >
-            <Image
-              src={headshot}
-              alt="Headshot of John Hamlin"
-              priority={true}
-              className="h-48 w-48 rounded-full border-[0.35rem] border-white object-cover shadow-xl"
-            />
-            <motion.span
-              ref={scope} // Framer Motion ref for useAnimate on click/hover
-              className="absolute bottom-0 left-0 text-7xl"
-              initial={{ opacity: 0, scale: 0 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{
-                type: 'spring',
-                stiffness: 125,
-                delay: 0.1,
-                duration: 0.7,
-              }}
-            >
-              👋🏻
-            </motion.span>
-          </motion.div>
-        </div> */}
+       
         {/* Leading changes the line spacing. Need the ! to override the line spacing in prose-2xl */}
         <motion.div
-          className="prose prose-2xl mb-10 mt-4 px-4 font-medium dark:prose-invert prose-p:!leading-[1.5] sm:prose-p:text-4xl"
+          className="prose prose-1xl mb-10 mt-4 px-4 font-medium dark:prose-invert prose-p:!leading-[1.5] sm:prose-p:text-4xl"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
         >
