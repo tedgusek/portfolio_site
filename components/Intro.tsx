@@ -1,13 +1,11 @@
 'use client'; // needed for framer-motion
 
-// import IntroContent from '@/content/home.mdx';
 import IntroContent from '@/content/intro.mdx';
 import { useSectionInView } from '@/hooks/useSectionInView';
-// import headshot from '@/public/John_Hamlin_Headshot.jpg';
 import { motion, useAnimate } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
-// import { BsArrowRight, BsLinkedin } from 'react-icons/bs';
+import { BsArrowRight, BsLinkedin } from 'react-icons/bs';
 // import { FaGithubSquare } from 'react-icons/fa';
 // import { HiDownload } from 'react-icons/hi';
 // import TrackedLink from './TrackedLink';
@@ -56,13 +54,14 @@ function Home() {
           }}
         >
           {/* Contact Me Button */}
-          {/* <Link
-            href={'mailto:johnhamlin@gmail.com?subject=Hello%20John!'}
+          <Link
+            href={'mailto:theohgusek@gmail.com?subject=Hello%20Ted!'}
             className="group flex items-center gap-2 rounded-full bg-gray-900 px-7 py-3 text-white outline-none transition-all hover:scale-110 hover:bg-gray-950 focus:scale-110 active:scale-105"
+            target="_blank"
           >
             Email me{' '}
             <BsArrowRight className="opacity-70 transition group-hover:translate-x-1" />
-          </Link> */}
+          </Link>
 
           {/* Resume Button */}
           {/* <TrackedLink
