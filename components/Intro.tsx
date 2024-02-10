@@ -56,7 +56,7 @@ function Home() {
           {/* Contact Me Button */}
           <Link
             href={'mailto:theohgusek@gmail.com?subject=Hello%20Ted!'}
-            className="group flex items-center gap-2 rounded-full bg-gray-900 px-7 py-3 text-white outline-none transition-all hover:scale-110 hover:bg-gray-950 focus:scale-110 active:scale-105"
+            className="group flex items-center gap-2 rounded-full bg-teal-400 px-7 py-3 text-gray-600 outline-none transition-all hover:scale-110 hover:bg-teal-300 focus:scale-110 active:scale-105"
             target="_blank"
           >
             Email me{' '}
