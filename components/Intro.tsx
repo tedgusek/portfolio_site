@@ -7,24 +7,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { BsArrowRight, BsLinkedin } from 'react-icons/bs';
 import { FaGithubSquare } from 'react-icons/fa';
-// import { HiDownload } from 'react-icons/hi';
+import { HiDownload } from 'react-icons/hi';
 // import TrackedLink from './TrackedLink';
 
 function Home() {
   const { ref } = useSectionInView('Home', 0.5);
-
-  // Animate the wave emoji on hover/click
-  const [scope, animate] = useAnimate();
-  const animateWave = () => {
-    animate(scope.current, {
-      rotate: [0, 10, -10, 10, 0],
-      transition: {
-        type: 'spring',
-        stiffness: 125,
-        duration: 0.7,
-      },
-    });
-  };
 
   return (
     <section
@@ -64,16 +51,16 @@ function Home() {
           </Link>
 
           {/* Resume Button */}
-          {/* <TrackedLink
-            className="group flex items-center gap-2 rounded-full border border-black/10 bg-white px-7 py-3 outline-none transition hover:scale-110 focus:scale-110 active:scale-105 dark:bg-white/10"
-            href="/John_Hamlin_Resume.pdf"
-            tag="Resume Downloaded"
-            download="John_Hamlin_Resume.pdf"
+          <Link
+            className="group flex items-center gap-2 rounded-full bg-teal-400 px-7 py-3 text-gray-600 outline-none transition-all hover:scale-110 hover:bg-teal-300 focus:scale-110 active:scale-105"
+            href="/Ted_Gusek_Resume_Software_Engineer.pdf"
+            // tag="Resume Downloaded"
+            download="Ted_Gusek_Resume_Software_Engineer.pdf"
             target="_blank"
           >
             Résumé
             <HiDownload className="opacity-60 transition group-hover:scale-y-125" />
-          </TrackedLink> */}
+          </Link>
 
           {/* LinkedIn Button */}
           <Link
