@@ -6,7 +6,7 @@ import { motion, useAnimate } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { BsArrowRight, BsLinkedin } from 'react-icons/bs';
-// import { FaGithubSquare } from 'react-icons/fa';
+import { FaGithubSquare } from 'react-icons/fa';
 // import { HiDownload } from 'react-icons/hi';
 // import TrackedLink from './TrackedLink';
 
@@ -77,8 +77,8 @@ function Home() {
 
           {/* LinkedIn Button */}
           <Link
-            href="https://www.linkedin.com/in/hamlinjohn/"
-            className="flex items-center justify-center gap-2 rounded-full border border-black/10 bg-white p-4  text-[1.35rem] text-gray-900 transition hover:scale-[1.15] hover:text-gray-900 focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/60"
+            href="https://www.linkedin.com/in/tedgusek/"
+            className="flex items-center justify-center gap-2 rounded-full border border-black/10 dark:bg-teal-400 p-4 text-[1.35rem] dark:text-gray-600 transition-all hover:scale-[1.15] hover:bg-teal-300  active:scale-105 "
             target="_blank"
           >
             <BsLinkedin />
@@ -86,14 +86,14 @@ function Home() {
           </Link>
 
           {/* GitHub Button */}
-          {/* <Link
-            href="https://github.com/johnhamlin"
-            className="text-gray700 flex items-center justify-center gap-2 rounded-full border border-black/10 bg-white p-4 text-[1.5rem] transition hover:scale-[1.15] hover:text-gray-900 focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/60"
+          <Link
+            href="https://github.com/tedgusek"
+            className="flex items-center justify-center gap-2 rounded-full border border-black/10 dark:bg-teal-400 p-4 text-[1.35rem] dark:text-gray-600 transition-all hover:scale-[1.15] hover:bg-teal-300  active:scale-105 "
             target="_blank"
           >
             <FaGithubSquare />
             <span className="text-lg sm:hidden">GitHub</span>
-          </Link> */}
+          </Link>
         </motion.div>
       </div>
     </section>
