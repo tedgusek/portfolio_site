@@ -6,6 +6,7 @@
 import ThemeSwitch from '@/components/ThemeSwitch';
 import ActiveSectionContextProvider from '@/context/ActiveSectionContextProvider';
 import ThemeContextProvider from '@/context/ThemeContextProvider';
+import ActiveSectionContextProviderFooter from '@/context/ActiveSectionContextProviderFooter';
 // import { ClerkProvider } from '@clerk/nextjs';
 // import { GoogleAnalytics } from '@next/third-parties/google';
 // import { Analytics } from '@vercel/analytics/react';
@@ -13,6 +14,7 @@ import ThemeContextProvider from '@/context/ThemeContextProvider';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
+import Footer from '@/components/Footer';
 // import Head from 'next/head';
 
 const inter = Inter({ subsets: ["latin"] });
@@ -42,6 +44,10 @@ export default function RootLayout({
               {children}
               {/* <Footer /> */}
             </ActiveSectionContextProvider>
+            <ActiveSectionContextProviderFooter>
+            {children}
+            <Footer/>
+            </ActiveSectionContextProviderFooter>
             <ThemeSwitch />
           </ThemeContextProvider>
         {/* </ClerkProvider> */}

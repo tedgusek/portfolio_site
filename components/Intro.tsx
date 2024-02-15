@@ -64,7 +64,7 @@ function Home() {
 
           {/* LinkedIn Button */}
           <Link
-            href="https://www.linkedin.com/in/tedgusek/"
+            href='https://www.linkedin.com/in/tedgusek/'
             className="flex items-center justify-center gap-2 rounded-full border border-black/10 dark:bg-teal-400 p-4 text-[1.35rem] dark:text-gray-600 transition-all hover:scale-[1.15] hover:bg-teal-300  active:scale-105 "
             target="_blank"
           >
