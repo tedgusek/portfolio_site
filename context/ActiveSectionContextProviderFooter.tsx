@@ -2,7 +2,7 @@
 import { useState, createContext, useContext } from 'react';
 
 type ActiveSectionContextProviderFooterProps = {
-  children: React.ReactNode;
+  childrenFooter: React.ReactNode;
 };
 
 type ActiveSectionContextTypeFooter = {
@@ -19,7 +19,7 @@ export const ActiveSectionContextFooter =
 
 // Provider for the ActiveSectionContext
 export default function ActiveSectionContextProviderFooter({
-  children,
+  childrenFooter,
 }: ActiveSectionContextProviderFooterProps) {
 //   const [activeSection, setActiveSectionFooter] = useState<any>('Home');
   const [activeSectionFooter, setActiveSectionFooter] = useState<SectionNameFooter>('Email Me');
@@ -34,7 +34,7 @@ export default function ActiveSectionContextProviderFooter({
         setTimeOfLastClick,
       }}
     >
-      {children}
+      {childrenFooter}
     </ActiveSectionContextFooter.Provider>
   );
 }

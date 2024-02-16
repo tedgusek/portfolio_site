@@ -35,22 +35,22 @@ function Footer() {
                   'flex w-full items-center justify-center px-3 py-3 transition hover:text-gray-950  dark:hover:text-gray-300',
                   {
                     'text-gray-950 dark:text-gray-100':
-                      activeSectionFooter === footerLinks.name,
+                      activeSectionFooter === link.name,
                   },
                   {
-                    'dark:text-gray-400': activeSectionFooter !== footerLinks.name,
+                    'dark:text-gray-400': activeSectionFooter !== link.name,
                   },
                 )}
                 href={link.href}
                 onClick={() => {
-                  setActiveSectionFooter(footerLinks.name);
+                  setActiveSectionFooter(link.name);
                   setTimeOfLastClick(Date.now());
                 }}
               >
                 {link.name}
 
                 {/* Active Section Indicator */}
-                {activeSectionFooter === footerLinks.name && (
+                {activeSectionFooter === link.name && (
                   <motion.span
                     className="absolute inset-0 -z-10 rounded-full bg-gray-200 dark:bg-teal-800"
                     layoutId="activeSectionFooter"

@@ -26,9 +26,10 @@ export const metadata: Metadata = {
 
 
 export default function RootLayout({
-  children,
+  children, childrenFooter,
 }: {
   children: React.ReactNode;
+  childrenFooter: React.ReactNode;
 }) {
   return (
     <html lang="en" >
@@ -45,8 +46,8 @@ export default function RootLayout({
               {/* <Footer /> */}
             </ActiveSectionContextProvider>
             <ActiveSectionContextProviderFooter>
-            {children}
-            <Footer/>
+            {childrenFooter}
+            {/* <Footer/> */}
             </ActiveSectionContextProviderFooter>
             <ThemeSwitch />
           </ThemeContextProvider>
